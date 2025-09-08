@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Modern Shop</title>
+
+  <!-- Google font (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="logo">🧺</div>
+        <span class="brand-name">My_Market</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a class="cta" href="#">Shop Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Welcome to our wide collection of <span class="accent">products</span></h1>
+      <p class="lead">Quality textiles and home goods chosen with care — soft, durable and beautifully designed for everyday life.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#products">Browse products</a>
+        <a class="btn ghost" href="#">Learn more</a>
+      </div>
+    </div>
+
+    <div class="hero-media" aria-hidden="true">
+      <img src="imgs/bg.jpg" alt="Featured product" />
+    </div>
+  </header>
+
+  <main>
+    <h2 id="products" class="section-title">Our products</h2>
+    <section class="products-grid container-2">
+      <!-- repeated product card -->
+      <article class="product">
+        <div class="media"><img src="imgs/tv.webp" alt="Towel" /></div>
+        <div class="product-body">
+          <h3>LG television</h3>
+          <p class="price">62,000 Ksh</p>
+        </div>
+      </article>
+
+
+      <article class="product">
+        <div class="media"><img src="imgs/woofer.jpg" alt="Towel" /></div>
+        <div class="product-body">
+          <h3>woofer</h3>
+          <p class="price">22,000 Ksh</p>
+        </div>
+      </article>
+
+
+      <article class="product">
+        <div class="media"><img src="imgs/fridge.webp" alt="Towel" /></div>
+        <div class="product-body">
+          <h3>samsung fridge</h3>
+          <p class="price">120,000 Ksh</p>
+        </div>
+      </article>
+
+
+      <article class="product">
+        <div class="media"><img src="imgs/tv-stand.webp" alt="Towel" /></div>
+        <div class="product-body">
+          <h3>TV stand</h3>
+          <p class="price">18,000 Ksh</p>
+        </div>
+      </article>
+
+
+      <article class="product">
+        <div class="media"><img src="imgs/washing-machine.jpg" alt="Towel" /></div>
+        <div class="product-body">
+          <h3>washing machine</h3>
+          <p class="price">59,000 Ksh</p>
+        </div>
+      </article>
+
+      <article class="product">
+        <div class="media"><img src="imgs/dishwasher.webp" alt="Towel" /></div>
+        <div class="product-body">
+          <h3>dishwasher</h3>
+          <p class="price">47,000 Ksh</p>
+        </div>
+      </article>
+
+      
+      <article class="product">
+        <div class="media"><img src="imgs/laptop.webp" alt="Towel" /></div>
+        <div class="product-body">
+          <h3>laptop</h3>
+          <p class="price">45,000 Ksh</p>
+        </div>
+      </article>
+
+      <article class="product">
+        <div class="media"><img src="imgs/desktop.webp" alt="Towel" /></div>
+        <div class="product-body">
+          <h3>desktop computer</h3>
+          <p class="price">54,000 Ksh</p>
+        </div>
+      </article>
+    </section>
+
+    <h2 id="reviews" class="section-title">Customer reviews</h2>
+    <section class="reviews-grid container-3">
+      <blockquote class="review">
+        <p>Great towels — super soft and absorbent. Fast delivery.</p>
+        <footer class="user">
+          <img src="imgs/s.jpg" alt="Ann avatar" />
+          <div>
+            <strong>Ann</strong>
+            <div class="rating" aria-hidden="true">★★★★☆</div>
+          </div>
+        </footer>
+      </blockquote>
+
+      <blockquote class="review">
+        <p>Love the colors and quality. Will buy again.</p>
+        <footer class="user">
+          <img src="imgs/s.jpg" alt="Ann avatar" />
+          <div>
+            <strong>Ann</strong>
+            <div class="rating" aria-hidden="true">★★★★★</div>
+          </div>
+        </footer>
+      </blockquote>
+
+      <blockquote class="review">
+        <p>Good value for money.</p>
+        <footer class="user">
+          <img src="imgs/s.jpg" alt="Ann avatar" />
+          <div>
+            <strong>Ann</strong>
+            <div class="rating" aria-hidden="true">★★★★☆</div>
+          </div>
+        </footer>
+      </blockquote>
+
+      <blockquote class="review">
+        <p>Nice texture and quick customer support.</p>
+        <footer class="user">
+          <img src="imgs/s.jpg" alt="Ann avatar" />
+          <div>
+            <strong>Ann</strong>
+            <div class="rating" aria-hidden="true">★★★★★</div>
+          </div>
+        </footer>
+      </blockquote>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> CozyMarket — Made with care</p>
+  </footer>
+
+  <script>
+    // small script for year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
